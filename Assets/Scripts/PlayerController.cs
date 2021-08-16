@@ -8,11 +8,14 @@ public class PlayerController : MonoBehaviour
     public float speedMove = 2f;
 
     public GameObject modelo;
+    public GameObject mira;
     private Animator anim;
 
-    public bool isShooting = false;
+    private bool isShooting = false;
     private bool isMoving = false;
     private bool isDeath = false;
+
+    public GameObject bullet;
 
     // Start is called before the first frame update
     void Start()
@@ -107,19 +110,23 @@ public class PlayerController : MonoBehaviour
         {
             case "forward":
                 modelo.transform.eulerAngles = new Vector3(0f, 0f, 0f);
-                //Instantiate(bullet, Shooter.transform.position, Shooter.transform.rotation);
+                mira.transform.eulerAngles = new Vector3(0f, 0f, 0f);
+                Instantiate(bullet, mira.transform.position, mira.transform.rotation);
                 break;
             case "back":
                 modelo.transform.eulerAngles = new Vector3(0, 180, 0);
-                //Instantiate(bullet, Shooter.transform.position, Shooter.transform.rotation);
+                mira.transform.eulerAngles = new Vector3(0, 180, 0);
+                Instantiate(bullet, mira.transform.position, mira.transform.rotation);
                 break;
             case "right":
                 modelo.transform.eulerAngles = new Vector3(0, 90, 0);
-                //Instantiate(bullet, Shooter.transform.position, Shooter.transform.rotation);
+                mira.transform.eulerAngles = new Vector3(0, 90, 0);
+                Instantiate(bullet, mira.transform.position, mira.transform.rotation);
                 break;
             default:
                 modelo.transform.eulerAngles = new Vector3(0, 270, 0);
-                //Instantiate(bullet, Shooter.transform.position, Shooter.transform.rotation);
+                mira.transform.eulerAngles = new Vector3(0, 270, 0);
+                Instantiate(bullet, mira.transform.position, mira.transform.rotation);
                 break;
         }
         Invoke("changeState", 0.5f);
@@ -131,7 +138,6 @@ public class PlayerController : MonoBehaviour
 
     private void Animation()
     {
-        Debug.Log(isMoving);
         anim.SetBool("isMoving", isMoving);
         anim.SetBool("isShooting", isShooting);
         anim.SetBool("isDeath", isDeath);
