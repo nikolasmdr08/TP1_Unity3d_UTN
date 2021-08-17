@@ -11,7 +11,6 @@ public class EnemyControler : MonoBehaviour
 
     public GameObject target;
     public float targetDistanceMax = 35f;
-    public float targetDistanceMin = 5f;
 
     public bool isAttack = false;
     public bool isMoving = false;

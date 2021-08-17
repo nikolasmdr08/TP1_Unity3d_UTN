@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c24595a480f974bb4553d25526cae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explode: {fileID: 0}
+  explode: {fileID: 1492545306711757001, guid: d6b91aa5c32a04f44be6d40c5260aafd, type: 3}
   target: {fileID: 0}
   range: 2
 --- !u!1001 &4025690652573650714
