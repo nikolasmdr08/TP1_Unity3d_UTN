@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6878637067792395929}
   - component: {fileID: 6878637067792395928}
   - component: {fileID: 6878637067792395935}
-  - component: {fileID: 6878637067792395934}
   - component: {fileID: 2926425982685123105}
+  - component: {fileID: 6934390281246208679}
+  - component: {fileID: 4549267715846862237}
   m_Layer: 0
   m_Name: TurtleBullet
   m_TagString: Untagged
@@ -81,30 +82,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &6878637067792395934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6878637067792395933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff967b7ed48f2441bcf509edf6b889a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isAnimated: 1
-  isRotating: 1
-  isFloating: 0
-  isScaling: 0
-  rotationAngle: {x: 0, y: 0, z: 10}
-  rotationSpeed: 10
-  floatSpeed: 0.04
-  floatRate: 0.5
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 1.5, y: 1.5, z: 1.5}
-  scaleSpeed: 1
-  scaleRate: 0.5
 --- !u!114 &2926425982685123105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,3 +95,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  timeLife: 2
+--- !u!65 &6934390281246208679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878637067792395933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1386092, y: 2.1671233, z: 3.1999996}
+  m_Center: {x: 0, y: -0.000000059604645, z: 0}
+--- !u!114 &4549267715846862237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6878637067792395933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234e86562ff38364694921e972dc8abe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCollision: Player
+  mycollider: Enemy
