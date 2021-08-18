@@ -22,7 +22,7 @@ public class TowerControler : MonoBehaviour
     void Update()
     {
         if(target != null) {
-            if (Vector3.Distance(target.transform.position, mira.transform.position) < distance) {
+            if (Vector3.Distance(target.transform.position, transform.position) < distance) {
                 var lookPos = target.transform.position - transform.position;
                 lookPos.y = 0f;
                 var rotation = Quaternion.LookRotation(lookPos);
@@ -32,7 +32,7 @@ public class TowerControler : MonoBehaviour
                     changeState();
                     //shoot
                     Instantiate(bullet, mira.transform.position, mira.transform.rotation);
-                    Invoke("changeState", 8f);
+                    Invoke("changeState", 4f);
                 }
             }
             else {
