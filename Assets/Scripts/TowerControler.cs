@@ -11,6 +11,7 @@ public class TowerControler : MonoBehaviour
     public float distance = 20;
     public float speed = 50;
     bool isShooting = false;
+    public GameObject soundExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class TowerControler : MonoBehaviour
                     changeState();
                     //shoot
                     Instantiate(bullet, mira.transform.position, mira.transform.rotation);
+                    Instantiate(soundExplosion, mira.transform.position, mira.transform.rotation);
                     Invoke("changeState", 4f);
                 }
             }

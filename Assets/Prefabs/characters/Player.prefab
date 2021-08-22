@@ -81,6 +81,8 @@ MonoBehaviour:
   modelo: {fileID: 2966333237301614546}
   mira: {fileID: 4034095293986531407}
   bullet: {fileID: 8471438001579939243, guid: e49a6d34d7fe34549a1600761b2a70bc, type: 3}
+  soundBullet: {fileID: 5687314857925652512, guid: e6c54d54b5c43a9469f09a892e2956f0,
+    type: 3}
 --- !u!136 &1968982415468598935
 CapsuleCollider:
   m_ObjectHideFlags: 0

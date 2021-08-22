@@ -85,10 +85,12 @@ MonoBehaviour:
   speed: 2
   target: {fileID: 0}
   targetDistanceMax: 35
-  targetDistanceMin: 5
   isAttack: 0
   isMoving: 0
   modelo: {fileID: 7954282536116775935}
+  coin: {fileID: 5595533134082528326, guid: 49bbfb91d6d7b38428c899e94153923f, type: 3}
+  shield: {fileID: 7971183580899200395, guid: 8a3a3787430ed9c4cb9a259da1a491f0, type: 3}
+  kill: {fileID: 7139668964277079760, guid: 8307ba8b0539cc94c83c4467b47d446b, type: 3}
 --- !u!114 &5243156351642796436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +108,8 @@ MonoBehaviour:
   shootingDistance: 20
   bullet: {fileID: 6878637067792395933, guid: d11a646cfaf874a46a5363ebf1f92d19, type: 3}
   isAttack: 0
+  soundEnemyShoot: {fileID: 7443894022944832641, guid: ce2307242b4e55a4782aabaf56bd7da5,
+    type: 3}
 --- !u!135 &3126177414386355201
 SphereCollider:
   m_ObjectHideFlags: 0

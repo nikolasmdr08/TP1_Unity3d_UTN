@@ -8,6 +8,7 @@ public class EnemyShoot : MonoBehaviour
     public float shootingDistance = 20f;
     public GameObject bullet;
     public bool isAttack = false;
+    public GameObject soundEnemyShoot;
 
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class EnemyShoot : MonoBehaviour
                 // cambio el valor para limitar los disparos
                 changeState();
                 //comienzo a disparar al player cuendo la distancia es 12 o menos
+                Instantiate(soundEnemyShoot, mira.transform.position, mira.transform.rotation);
                 Instantiate(bullet, mira.transform.position, mira.transform.rotation);
                 Invoke("changeState", 0.5f);
             }

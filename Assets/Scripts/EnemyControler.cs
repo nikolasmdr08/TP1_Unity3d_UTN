@@ -18,6 +18,11 @@ public class EnemyControler : MonoBehaviour
     public GameObject modelo;
     private Animator anim;
 
+    //item spawn
+    public GameObject coin;
+    public GameObject shield;
+    public GameObject kill;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,6 +90,22 @@ public class EnemyControler : MonoBehaviour
 
     private void changeState() {
         isAttack = !isAttack;
+    }
+
+    private void OnDestroy() {
+        int probabilidad = Random.Range(0,101);
+
+        if(probabilidad <= 60) {
+            Instantiate(coin, transform.position, transform.rotation);
+        }
+        else {
+            if (probabilidad <=90) {
+                Instantiate(shield, transform.position, transform.rotation);
+            }
+            else {
+                Instantiate(kill, transform.position, transform.rotation);
+            }
+        }
     }
 
 }

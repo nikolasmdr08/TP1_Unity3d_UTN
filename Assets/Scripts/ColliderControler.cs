@@ -24,7 +24,12 @@ public class ColliderControler : MonoBehaviour
         if (!isMe) {
             bool isTarget = collision.gameObject.CompareTag(targetCollision);
             if (isTarget) {
-                print("enemigo");
+                if (targetCollision == "Player") {
+                    GameManager.Instance.gameOver();
+                }
+                if (targetCollision == "Enemy") {
+                    GameManager._score+=100;
+                }
                 Destroy(collision.gameObject);
                 Destroy(gameObject);
             }
@@ -34,4 +39,5 @@ public class ColliderControler : MonoBehaviour
             }
         }
     }
+
 }

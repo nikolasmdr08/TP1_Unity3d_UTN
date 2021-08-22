@@ -7,6 +7,7 @@ public class RangeActivateExplosion : MonoBehaviour
     public GameObject explode;
     public GameObject target;
     public float range =2f;
+    public GameObject soundExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class RangeActivateExplosion : MonoBehaviour
     {
         if (target != null) {
             if (Vector3.Distance(transform.position, target.transform.position) < range) {
+                Instantiate(soundExplosion, transform.position, transform.rotation);
                 Instantiate(explode, transform.position, transform.rotation);
                 Destroy(gameObject);
             }

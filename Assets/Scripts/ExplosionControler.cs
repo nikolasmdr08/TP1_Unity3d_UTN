@@ -5,6 +5,7 @@ using UnityEngine;
 public class ExplosionControler : MonoBehaviour
 {
     public GameObject explode;
+    public GameObject soundExplode;
     public float timer;
 
     // Start is called before the first frame update
@@ -24,6 +25,7 @@ public class ExplosionControler : MonoBehaviour
     }
 
     public void selfDestruct() {
+        Instantiate(soundExplode, transform.position, transform.rotation);
         Instantiate(explode, transform.position, transform.rotation);
         Destroy(gameObject);
     }

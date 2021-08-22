@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private bool isDeath = false;
 
     public GameObject bullet;
+    public GameObject soundBullet;
+    public GameObject soundDeath;
 
     // Start is called before the first frame update
     void Start()
@@ -129,6 +131,7 @@ public class PlayerController : MonoBehaviour
                 Instantiate(bullet, mira.transform.position, mira.transform.rotation);
                 break;
         }
+        Instantiate(soundBullet, mira.transform.position, mira.transform.rotation);
         Invoke("changeState", 0.5f);
     }
     private void changeState()
@@ -141,5 +144,9 @@ public class PlayerController : MonoBehaviour
         anim.SetBool("isMoving", isMoving);
         anim.SetBool("isShooting", isShooting);
         anim.SetBool("isDeath", isDeath);
+    }
+
+    private void OnDestroy() {
+        Instantiate(soundDeath, gameObject.transform.position, gameObject.transform.rotation);
     }
 }
