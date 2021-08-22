@@ -13,6 +13,7 @@ public class GameOver : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.Z)) {
+            GameManager._score = 0;
             SceneManager.LoadScene("Menu");
         }
         if (Input.GetKey(KeyCode.X)) {
