@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7119021638989474505}
   - component: {fileID: 7119021638989474506}
+  - component: {fileID: 4742603311995114728}
   m_Layer: 0
   m_Name: soundDead
   m_TagString: Untagged
@@ -127,3 +128,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4742603311995114728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119021638989474507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3bd5bef211256d4dab779169164a66e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duracion: 0.7
