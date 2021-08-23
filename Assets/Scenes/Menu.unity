@@ -395,7 +395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &363897279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1402,8 +1402,7 @@ MonoBehaviour:
   m_Text: "3D Models - Asset Store de Unity\nUsuarios: Dungeon Mason\n               
     Matt Art\n                Auryn Sky\n---------------------------------------------\nFonts
     - Dafont Page\n            Minecraft Font\n---------------------------------------------\nSounds
-    and Music - Freesound page\n                                       opengameart
-    page"
+    and Music\nFreesound page\nopengameart page"
 --- !u!222 &1332253837
 CanvasRenderer:
   m_ObjectHideFlags: 0
