@@ -28,6 +28,7 @@ public class ShieldItem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")) {
+            GameManager._activeShield = true;
             Instantiate(shield, gameObject.transform.position, gameObject.transform.rotation);
             Instantiate(soundShield, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(gameObject);

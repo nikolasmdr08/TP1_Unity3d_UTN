@@ -12,6 +12,7 @@ public class Shield : MonoBehaviour
     }
 
     private void destroy() {
+        GameManager._activeShield = false;
         Destroy(gameObject);
     }
     // Start is called before the first frame update

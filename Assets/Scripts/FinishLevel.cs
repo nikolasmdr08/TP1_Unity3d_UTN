@@ -24,6 +24,7 @@ public class FinishLevel : MonoBehaviour
             countEnemys = cant.Length;
 
             if (countEnemys == 0) {
+                GameManager._activeShield = true;
                 GameManager.Instance.winLevel();
             }
         }

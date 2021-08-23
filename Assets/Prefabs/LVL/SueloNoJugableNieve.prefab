@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2708591622857049035}
   - component: {fileID: 3284302758169391877}
   m_Layer: 0
-  m_Name: SueloNoJugable
+  m_Name: SueloNoJugableNieve
   m_TagString: Limit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

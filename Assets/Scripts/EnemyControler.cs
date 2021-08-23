@@ -95,11 +95,11 @@ public class EnemyControler : MonoBehaviour
     private void OnDestroy() {
         int probabilidad = Random.Range(0,101);
 
-        if(probabilidad <= 60) {
+        if(probabilidad <= 85) {
             Instantiate(coin, transform.position, transform.rotation);
         }
         else {
-            if (probabilidad <=90) {
+            if (probabilidad <=95) {
                 Instantiate(shield, transform.position, transform.rotation);
             }
             else {

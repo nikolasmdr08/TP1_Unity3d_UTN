@@ -24,13 +24,14 @@ public class ColliderControler : MonoBehaviour
         if (!isMe) {
             bool isTarget = collision.gameObject.CompareTag(targetCollision);
             if (isTarget) {
-                if (targetCollision == "Player") {
+                if (targetCollision == "Player" && !GameManager._activeShield) {
+                    Destroy(collision.gameObject);
                     GameManager.Instance.gameOver();
                 }
                 if (targetCollision == "Enemy") {
                     GameManager._score+=100;
+                    Destroy(collision.gameObject);
                 }
-                Destroy(collision.gameObject);
                 Destroy(gameObject);
             }
             if (collision.gameObject.CompareTag("Limit")) {

@@ -16,6 +16,7 @@ public class GameWin : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.Z)) {
+            GameManager._activeShield = false;
             SceneManager.LoadScene(lvl);
         }
         if (Input.GetKey(KeyCode.X)) {
