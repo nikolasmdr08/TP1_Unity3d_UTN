@@ -605,7 +605,7 @@ PrefabInstance:
     - target: {fileID: 4025690652005188222, guid: cf7c36214b06e2b46a7b678e533c0a4c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 6.45
       objectReference: {fileID: 0}
     - target: {fileID: 4025690652005188222, guid: cf7c36214b06e2b46a7b678e533c0a4c,
         type: 3}
@@ -625,7 +625,7 @@ PrefabInstance:
     - target: {fileID: 4025690652005188222, guid: cf7c36214b06e2b46a7b678e533c0a4c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4025690652005188222, guid: cf7c36214b06e2b46a7b678e533c0a4c,
         type: 3}
@@ -635,7 +635,7 @@ PrefabInstance:
     - target: {fileID: 4025690652005188222, guid: cf7c36214b06e2b46a7b678e533c0a4c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4025690652005188222, guid: cf7c36214b06e2b46a7b678e533c0a4c,
         type: 3}
@@ -650,7 +650,7 @@ PrefabInstance:
     - target: {fileID: 4025690652005188222, guid: cf7c36214b06e2b46a7b678e533c0a4c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4025690652005188222, guid: cf7c36214b06e2b46a7b678e533c0a4c,
         type: 3}
@@ -731,6 +731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 1836598966498971211, guid: 8a793024d266ed74c9643203c7daa70d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a793024d266ed74c9643203c7daa70d, type: 3}
 --- !u!1001 &4920321682216551924
@@ -744,6 +749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 4920321681179236638, guid: 32726d09c87df5648be838c9004a5b99,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4920321681179236639, guid: 32726d09c87df5648be838c9004a5b99,
         type: 3}
@@ -883,6 +893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Explosion
       objectReference: {fileID: 0}
+    - target: {fileID: 1492545306711757001, guid: d6b91aa5c32a04f44be6d40c5260aafd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4972420546622559551, guid: d6b91aa5c32a04f44be6d40c5260aafd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1007,6 +1022,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurtleBullet
       objectReference: {fileID: 0}
+    - target: {fileID: 6878637067792395933, guid: d11a646cfaf874a46a5363ebf1f92d19,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d11a646cfaf874a46a5363ebf1f92d19, type: 3}
 --- !u!1001 &7954991732120355033
@@ -1076,6 +1096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyShooter
       objectReference: {fileID: 0}
+    - target: {fileID: 7954991731773706769, guid: 5bdd44f3d928e4947b19f6026dd92101,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bdd44f3d928e4947b19f6026dd92101, type: 3}
 --- !u!1001 &8471438003059343171
@@ -1089,6 +1114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerBullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471438001579939243, guid: e49a6d34d7fe34549a1600761b2a70bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8471438001579939247, guid: e49a6d34d7fe34549a1600761b2a70bc,
         type: 3}
